@@ -1,0 +1,1 @@
+Initial work on my own domain, where I will publish small projects, aplications (Java, Spring MVC, Hibernate, MySQL/PostgreSQL, Bootstrap, JavaScript).
