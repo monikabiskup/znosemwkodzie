@@ -8,38 +8,44 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class ApplicationController {
 
-    @GetMapping("/main")
+    @GetMapping("/")
     public String sayHello() {
         return "welcomeTemplate";
     }
 
+
+    @GetMapping("/main")
+    public String getMain() {
+        return "welcomeTemplate";
+    }
+
     @GetMapping("/spojChallenge")
-    public String takeToSpojChallenge() {
+    public String getSpojChallenge() {
         return "spojChallengeTemplate";
     }
 
     @GetMapping("/algorithmChallenge")
-    public String takeToAlgorithmChallenge() {
+    public String getAlgorithmChallenge() {
         return "algorithmChallengeTemplate";
     }
 
     @GetMapping("/windowApplicationsChallenge")
-    public String takeToWindowApplicationsChallenge() {
+    public String getWindowApplicationsChallenge() {
         return "windowApplicationsChallengeTemplate";
     }
 
     @GetMapping("/about")
-    public String takeToAbout() {
+    public String getAbout() {
         return "aboutTemplate";
     }
 
     @GetMapping("/contact")
-    public String takeToContact() {
+    public String getContact() {
         return "contactTemplate";
     }
 
     @GetMapping("/faq")
-    public String takeToFAQ() {
+    public String getFAQ() {
         return "FAQTemplate";
     }
 }
