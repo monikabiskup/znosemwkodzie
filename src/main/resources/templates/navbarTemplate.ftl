@@ -7,18 +7,69 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Z nosem w kodzie</a>
+            <a class="navbar-brand" href="/main">Z nosem w kodzie</a>
         </div>
         <div class="collapse navbar-collapse" id="navbarCollapse">
+
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#" target="_blank"><span class="glyphicon glyphicon-home"></span>  Strona główna</a></li>
-                <li><a href="#" target="_blank">Spoj challenge</a></li>
-                <li><a href="#" target="_blank">Algorytm challenge</a></li>
-                <li ><a href="#" target="_blank">Aplikacje okienkowe</a></li>
-                <li><a href="#" target="_blank">About</a></li>
-                <li><a href="#" target="_blank">Contact</a></li>
-                <li ><a href="#" target="_blank">FAQ</a></li>
-                <li style="right:0; position:absolute"><a href="#" target="_blank"><span class="glyphicon glyphicon-user">  Logowanie</a></li>
+
+                <#if springMacroRequestContext.requestUri?contains("/main")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/main"><span class="glyphicon glyphicon-home"></span>  Strona główna</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/spojChallenge")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/spojChallenge">Spoj challenge</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/algorithmChallenge")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/algorithmChallenge">Algorytm challenge</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/windowApplicationsChallenge")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/windowApplicationsChallenge">Aplikacje okienkowe</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/about")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/about">O mnie</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/contact")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/contact">Kontakt</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/faq")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/faq">FAQ</a>
+                </li>
+
+                <li style="right:0; position:absolute"><a href="/main"><span class="glyphicon glyphicon-user">  Logowanie</a></li>
             </ul>
         </div>
     </div>

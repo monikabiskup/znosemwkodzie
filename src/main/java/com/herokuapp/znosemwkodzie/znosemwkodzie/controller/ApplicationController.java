@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class ApplicationController {
 
-    @GetMapping("/")
+    @GetMapping("/main")
     public String sayHello() {
         return "welcomeTemplate";
     }
@@ -18,12 +18,12 @@ public class ApplicationController {
         return "spojChallengeTemplate";
     }
 
-    @GetMapping("/algorytmChallenge")
+    @GetMapping("/algorithmChallenge")
     public String takeToAlgorithmChallenge() {
         return "algorithmChallengeTemplate";
     }
 
-    @GetMapping("/aplikacjeOkienkoweChallenge")
+    @GetMapping("/windowApplicationsChallenge")
     public String takeToWindowApplicationsChallenge() {
         return "windowApplicationsChallengeTemplate";
     }

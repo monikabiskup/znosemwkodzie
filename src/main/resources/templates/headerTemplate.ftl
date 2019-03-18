@@ -9,9 +9,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        .nav navbar-nav li:last-child {
-            float: right; /* last li item */
-            top:10px;
+        h2 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .jumbotron{
+            margin-top: 85px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-style: italic;
         }
     </style>
 </head>
