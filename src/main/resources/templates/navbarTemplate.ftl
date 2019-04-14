@@ -21,36 +21,36 @@
                     <a href="/main"><span class="glyphicon glyphicon-home"></span>  Strona główna</a>
                 </li>
 
-                <#if springMacroRequestContext.requestUri?contains("/spojChallenge")>
-                <li class="nav-item active">
-                <#else>
-                <li class="nav-item">
-                </#if>
-                    <a href="/spojChallenge">Spoj challenge</a>
-                </li>
-
-                <#if springMacroRequestContext.requestUri?contains("/algorithmChallenge")>
-                <li class="nav-item active">
-                <#else>
-                <li class="nav-item">
-                </#if>
-                    <a href="/algorithmChallenge">Algorytm challenge</a>
-                </li>
-
-                <#if springMacroRequestContext.requestUri?contains("/windowApplicationsChallenge")>
-                <li class="nav-item active">
-                <#else>
-                <li class="nav-item">
-                </#if>
-                    <a href="/windowApplicationsChallenge">Aplikacje okienkowe</a>
-                </li>
-
                 <#if springMacroRequestContext.requestUri?contains("/about")>
                 <li class="nav-item active">
                 <#else>
                 <li class="nav-item">
                 </#if>
-                    <a href="/about">O mnie</a>
+                    <a href="/about">O projekcie</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/listOfUsers")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/listOfUsers">Lista graczy</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/listOfGames")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/listOfGames">Nasze gry</a>
+                </li>
+
+                <#if springMacroRequestContext.requestUri?contains("/registrationForm")>
+                <li class="nav-item active">
+                <#else>
+                <li class="nav-item">
+                </#if>
+                    <a href="/registrationForm">Rejestracja</a>
                 </li>
 
                 <#if springMacroRequestContext.requestUri?contains("/contact")>

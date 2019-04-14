@@ -19,24 +19,24 @@ public class ApplicationController {
         return "welcomeTemplate";
     }
 
-    @GetMapping("/spojChallenge")
-    public String getSpojChallenge() {
-        return "spojChallengeTemplate";
-    }
-
-    @GetMapping("/algorithmChallenge")
-    public String getAlgorithmChallenge() {
-        return "algorithmChallengeTemplate";
-    }
-
-    @GetMapping("/windowApplicationsChallenge")
-    public String getWindowApplicationsChallenge() {
-        return "windowApplicationsChallengeTemplate";
-    }
-
     @GetMapping("/about")
     public String getAbout() {
         return "aboutTemplate";
+    }
+
+    @GetMapping("/listOfUsers")
+    public String getListOfUsers() {
+        return "listOfUsersTemplate";
+    }
+
+    @GetMapping("/listOfGames")
+    public String getListOfGames() {
+        return "listOfGamesTemplate";
+    }
+
+    @GetMapping("/registrationForm")
+    public String getRegistrationForm() {
+        return "registrationFormTemplate";
     }
 
     @GetMapping("/contact")

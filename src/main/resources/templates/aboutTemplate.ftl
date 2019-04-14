@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="jumbotron">
-                <h2>O MNIE</h2>
+                <h2>O projekcie</h2>
             </div>
         </div>
     </div>

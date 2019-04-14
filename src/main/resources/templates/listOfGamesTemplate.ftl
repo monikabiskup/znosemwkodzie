@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="jumbotron">
-                <h2>APLIKACJE OKIENKOWE</h2>
+                <h2>Lista Gier</h2>
             </div>
         </div>
     </div>
