@@ -39,6 +39,11 @@ public class ApplicationController {
         return "registrationFormTemplate";
     }
 
+    @GetMapping("/processForm")
+    public String processForm() {
+        return "registrationFinishTemplate";
+    }
+
     @GetMapping("/contact")
     public String getContact() {
         return "contactTemplate";

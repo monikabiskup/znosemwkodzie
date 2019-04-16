@@ -6,10 +6,7 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="jumbotron">
-                <form action="processForm" method="GET"/>
-                    <input type="text" name="userName" placeholder="Enter You Name" />
-                    <input type="submit"/>
-                </form>
+                <h6>Hello ${param.userName}</h6>
             </div>
         </div>
     </div>
